@@ -1,26 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>{{title}}</title>
-        <link rel="stylesheet" href="css/style.css"/> <!-- static path for public folder is already set in app.js -->
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     </head>
     <body>
         <div class="main-content">
             {{>header}}
-            <article class="widget">
-                <form class="weatherLocation"><input placeholder="location..." type = "text"/><button>Seach</button>
-                </form>
-                <div class="weatherIcon"><i class="wi wi-day-cloudy"></i></div>
+            <div class="widget">
+                <div class="weatherLocation">
+                    <form class="weatherForm">
+                        <input placeholder="Enter city name..." type="text" autocomplete="off" required/>
+                        <button type="submit">Search</button>
+                    </form>
+                </div>
+                <div class="weatherIcon">
+                    <i class="wi wi-day-sunny"></i>
+                </div>
                 <div class="weatherInfo">
-                    <div class="temperature"><span></span></div>
+                    <div class="temperature">
+                        <span>--°</span>
+                    </div>
                     <div class="description">    
-                        <div class="weatherCondition"></div>    
-                        <div class="place"></div>
+                        <div class="weatherCondition">Welcome</div>    
+                        <div class="place">Search for a city to get weather</div>
                     </div>
                 </div>
                 <div class="date"></div>
-            </article>
+            </div>
         </div>
-        <script src="js/app.js"></script> <!-- absolute path -->
+        <script src="js/app.js"></script>
     </body>
 </html>

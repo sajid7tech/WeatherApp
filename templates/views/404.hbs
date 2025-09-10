@@ -1,12 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>{{title}}</title>
-        <link rel="stylesheet" href="/css/styles.css"/> <!-- static path for public folder is already set in app.js -->
+        <link rel="stylesheet" href="/css/style.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     </head>
     <body>
-         <div class="main-content">
+        <div class="main-content">
             {{>header}}
+            <div class="widget">
+                <div class="weatherIcon">
+                    <i class="wi wi-na" style="color: #ef4444;"></i>
+                </div>
+                <div class="weatherInfo">
+                    <div class="temperature">
+                        <span>404</span>
+                    </div>
+                    <div class="description">    
+                        <div class="weatherCondition">Page Not Found</div>    
+                        <div class="place">The page you're looking for doesn't exist</div>
+                    </div>
+                </div>
+                <div class="date">
+                    <a href="/" style="color: white; text-decoration: none; font-weight: 600;">← Go Home</a>
+                </div>
+            </div>
         </div>
     </body>
 </html>
