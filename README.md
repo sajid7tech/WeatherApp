@@ -35,7 +35,7 @@ WeatherApp/
 │-- templates/       # Handlebars views
 │-- utils/           # Utility functions
 │-- package.json     # Project metadata and dependencies
-
+```
 
 # Demo :  [🚀 Live Demo](https://weather-app-iota-tawny-36.vercel.app/)
 
