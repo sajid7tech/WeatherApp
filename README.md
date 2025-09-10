@@ -29,5 +29,13 @@ npm install
 # Step 4: Start the server
 node src/app.js
 
+WeatherApp/
+│-- src/             # Main application (Express server)
+│-- public/          # Static files (CSS, JS, images)
+│-- templates/       # Handlebars views
+│-- utils/           # Utility functions
+│-- package.json     # Project metadata and dependencies
 
-[🚀 Live Demo](https://weather-app-iota-tawny-36.vercel.app/)
+
+# Demo :  [🚀 Live Demo](https://weather-app-iota-tawny-36.vercel.app/)
+
